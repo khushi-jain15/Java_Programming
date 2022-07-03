@@ -1,0 +1,20 @@
+// Getbit:- It is use to get a final type of bit wheather it is zerobit or non-zerobit
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = sc.nextInt();
+        System.out.println("Enter the position");
+        int pos = sc.nextInt();
+        System.out.println("Getbit was");
+        int bitMask = 1<<pos;
+        
+        if((bitMask & n)==0){
+            System.out.println("Zero bit ");
+        }
+        else{
+            System.out.println("Non-zero bit");
+        }
+    }
+}
