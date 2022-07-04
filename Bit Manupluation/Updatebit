@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n = sc.nextInt();
+        System.out.println("Enter the position");
+        int pos = sc.nextInt();
+        int bitMask = 1<<pos;
+        System.out.println("Enter the operation");
+        int oper = sc.nextInt();
+        
+        System.out.println("Updatebit was");
+        if(oper == 1){
+            int newbit = bitMask | n;
+            System.out.println(newbit);
+        }
+        else{
+            int notbit = ~(bitMask);
+            int newbitt = notbit | n;
+            System.out.println(newbitt);
+        }
+    }
+}
