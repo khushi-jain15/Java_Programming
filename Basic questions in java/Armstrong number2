@@ -1,0 +1,29 @@
+import java.lang.Math;
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int c=0,temp=num;
+		int last,n,rev=0;
+		last=num;
+		while(num!=0){
+		    num=num/10;
+		    c++;
+		    
+		}
+		while(temp!=0){
+		    
+		    n=temp%10;
+		    rev+=Math.pow(n,c);
+		    temp/=10;
+		}
+		if(rev==last){
+		    System.out.println("yes armstrong");
+		}
+		else{
+		    System.out.println("no");
+		}
+		    
+		}}
