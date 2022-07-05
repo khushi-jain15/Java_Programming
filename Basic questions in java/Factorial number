@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int n =  sc.nextInt();
+		int fac = 1;//factorial should be = 1 always as it multiply by the counter i
+		
+		for(int i=1;i<=n;i++){
+		    fac = fac*i;
+		}
+		System.out.println(fac);
+	}
+}
