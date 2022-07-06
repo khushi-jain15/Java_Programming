@@ -1,0 +1,12 @@
+import java.lang.Math;// java.lang.Math is use to import the mathmatical operations in java 
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("First random number is " + Math.random());
+		System.out.println("Second random number is " + Math.random());
+    	System.out.println("Thrid random number is " + Math.random());
+	}
+}
+
+//random()--> This mathmatical function is use to generate only random type double number greater then 0.0and less then 0.1
