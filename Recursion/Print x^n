@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main{
+    public static int calpower(int x,int n){
+        if(n==0){    // if power is equal to zero then x^0= 1
+            return 1;
+        }
+        if(x==0){     // if value is equal to zero with any power it gives 0^n=1
+            return 0;
+        }
+        int power = calpower(x,n-1);   // power get always decrease with 1
+        int power1 = x*power;          // formula is --> x*x^(n-1) = x^(n-1+1)=x^n
+        return power1;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number ");
+        int x = sc.nextInt();
+        System.out.println("Enter the power of stack");
+        int n = sc.nextInt();
+        System.out.println("Stack height is ");
+        int ans =  calpower(x,n); 
+        System.out.println(ans);
+    }
+}
