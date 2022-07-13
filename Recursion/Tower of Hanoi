@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+    public static void towerofHanoi(int n,String sr,String hel,String des){
+        if(n==1){
+            System.out.println("transfer disk "+ n +" from " + sr + " to " + des);
+            return;
+        }
+        towerofHanoi(n-1,sr,des,hel);
+        System.out.println("transfer disk "+ n +" from " + sr + " to " + des);
+        towerofHanoi(n-1,hel,sr,des);
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner (System.in);
+	    System.out.println("Enter the number of disk ");
+	    int n = sc.nextInt();
+	    towerofHanoi(n,"S","H","D");
+	}
+}
