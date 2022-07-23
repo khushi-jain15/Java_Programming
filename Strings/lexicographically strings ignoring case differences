@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string 1");
+		String s1 = sc.nextLine();
+		System.out.println("Enter the string 2");
+		String s2 = sc.nextLine();
+		
+		//Store the length of both the string in other variable
+		int s3 = s1.length();
+		int s4 = s2.length();
+		
+		if(s3<s4){
+		    System.out.println(s1+" is less then "+s2);
+		}
+		else if(s3==s4){
+		    System.out.println(s1+ " is equal to "+s2);
+		}
+		else{
+		    System.out.println(s1+" is greater then "+s2);
+		}
+	    
+	}
+}
