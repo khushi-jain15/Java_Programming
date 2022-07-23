@@ -1,0 +1,15 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the string");
+		String st = s.nextLine();
+		System.out.println("Enter the idx to get the char");
+		int idx = s.nextInt();
+		int index = st.charAt(idx);
+		
+		System.out.println("The Character at "+idx+" is "+(char)index);
+		
+	}
+}
