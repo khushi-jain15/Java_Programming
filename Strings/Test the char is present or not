@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the string 1");
+		String s1 = sc.nextLine();
+		System.out.println("Enter the character you want to search");
+		String s = sc.nextLine();
+	    System.out.println(s1.contains(s));
+	}
+}
+
+//contains()--> always return an boolean value whether it is true or false.It help to find wheather a given character is present in the string or not
